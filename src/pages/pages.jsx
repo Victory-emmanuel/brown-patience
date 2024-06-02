@@ -1,0 +1,9 @@
+export { default as Home } from "./home";
+export { default as About } from "./about";
+export { default as Blog } from "./blog";
+export { default as Book } from "./book";
+export { default as Subs } from "./subs";
+export { default as Services } from "./services";
+export { default as Contact } from "./contact";
+export { default as Community } from "./community";
+export { default as BlogContentPg } from "./blogContentPg";
