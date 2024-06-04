@@ -5,8 +5,8 @@ import {
   Instagram,
   LinkedIn,
   Phone,
+  Twitter,
   WhatsApp,
-  X,
 } from "@mui/icons-material";
 import { Box } from "@mui/material";
 
@@ -14,16 +14,16 @@ const Footer = () => {
   return (
     <>
       <div id="footer">
-        <footer className="w-full bg-extraClr dark:bg-gray-900 py-24 px-12 ">
-          <div className="md:px-12 lg:px-28">
-            <div className="container m-auto space-y-6 text-gray-600 dark:text-gray-300">
-              <div className="relative z-40 mb-12">
-                <Link to={""} aria-label="logo">
-                  <h3 className="text-secondary text-center font-2xl ">
-                    Brown Patience
+        <footer className="w-full bg-extraClr dark:bg-gray-900 xx:py-12 py-24 xx:px-0 px-12 ">
+          <div className="md:px-12 xx:px-6 lg:px-28">
+            <div className=" m-auto space-y-6 text-gray-600 dark:text-gray-300">
+              <div className="relative z-1 mb-12">
+                <Link to={"/"} aria-label="logo">
+                  <h3 className="text-accent text-center xx:font-xl font-2xl ">
+                    The Brown Patience Company
                   </h3>
                 </Link>
-                <p className="text-md text-center pt-6 text-secondary">
+                <p className="text-md xx:text-base text-center pt-6 text-secondary">
                   Get your message to the people in need of it. Many gifted
                   persons have a message for their world, books they've been
                   planning to write, a community they long to impact, but they
@@ -43,7 +43,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    to={"#"}
+                    to={"/services"}
                     className="hover:text-accent font-bold font-xl"
                   >
                     Services
@@ -51,7 +51,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    to={"#"}
+                    to={"/about"}
                     className="hover:text-accent font-bold font-xl"
                   >
                     About us
@@ -59,7 +59,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    to={"#"}
+                    to={"/boo"}
                     className="hover:text-accent font-bold font-xl"
                   >
                     Books
@@ -67,7 +67,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    to={"#"}
+                    to={"/subs"}
                     className="hover:text-accent font-bold font-xl"
                   >
                     Subscription
@@ -75,10 +75,10 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    to={"#"}
+                    to={"/community"}
                     className="hover:text-accent font-bold font-xl"
                   >
-                    Contact us
+                    Community
                   </Link>
                 </li>
               </ul>
@@ -117,7 +117,7 @@ const Footer = () => {
                   title="linkedin"
                   aria-label="linkedin"
                 >
-                  <X />
+                  <Twitter />
                 </Link>
               </Box>
 

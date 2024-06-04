@@ -1,10 +1,5 @@
-import {
-  FacebookSharp,
-  Instagram,
-  Language,
-  WhatsApp,
-} from "@mui/icons-material";
-import { Link } from "react-router-dom";
+import { FacebookSharp, Instagram, X, WhatsApp } from "@mui/icons-material";
+
 import { SocialsLink, SocialsMain } from "../styles/index.styled";
 
 const Socials = () => {
@@ -12,16 +7,16 @@ const Socials = () => {
     <>
       <SocialsMain id="socials">
         <SocialsLink>
-          <WhatsApp sx={{sm:{fontSize:"1rem"}}}/>
+          <WhatsApp sx={{ sm: { fontSize: "0.85rem" } }} />
         </SocialsLink>
         <SocialsLink>
-          <Language sx={{sm:{fontSize:"1rem"}}}/>
+          <X sx={{ sm: { fontSize: "0.85rem" } }} />
         </SocialsLink>
         <SocialsLink>
-          <Instagram sx={{sm:{fontSize:"1rem"}}}/>
+          <Instagram sx={{ sm: { fontSize: "0.85rem" } }} />
         </SocialsLink>
         <SocialsLink>
-          <FacebookSharp sx={{sm:{fontSize:"1rem"}}}/>
+          <FacebookSharp sx={{ sm: { fontSize: "0.85rem" } }} />
         </SocialsLink>
       </SocialsMain>
     </>

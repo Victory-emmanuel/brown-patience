@@ -4,7 +4,7 @@ const Servicesect = () => {
   return (
     <>
       <div id="service-sect">
-        <section className="py-24 px-12 grid place-content-center bg-primary">
+        <section className="py-24 xx:py-12 xx:px-6 xs:py-16 xs:px-8 px-12 grid place-content-center bg-primary">
           <div className="  m-auto space-y-12 grid  ">
             <div className="text-center">
               <h2
@@ -13,7 +13,7 @@ const Servicesect = () => {
                   display: "inline-block",
                   paddingBottom: "1rem",
                 }}
-                className=" mb-12 text-center text-2xl  font-bold text-secondary dark:text-white md:text-4xl"
+                className=" mb-12 xs:mb-8 text-center text-2xl xs:text-2xl  font-bold text-secondary dark:text-white md:text-4xl"
               >
                 What We Offer
               </h2>
@@ -27,7 +27,7 @@ const Servicesect = () => {
                   <Link href="" title="Iconic Panda" className="text-xs">
                     <img
                       src="https://i.postimg.cc/bvvgbxc4/pencil.png"
-                      className="w-20 mx-auto"
+                      className="w-20  xs:w-16 mx-auto"
                       width="512"
                       height="512"
                       alt="Pencil"
@@ -77,7 +77,7 @@ const Servicesect = () => {
                   >
                     <img
                       src="https://i.postimg.cc/PqGfv4w5/collaborate-1.png"
-                      className="w-20 mx-auto"
+                      className="w-20  xs:w-16 mx-auto"
                       width="512"
                       height="512"
                       alt="Collaboration"
@@ -126,7 +126,7 @@ const Servicesect = () => {
                   >
                     <img
                       src="https://i.postimg.cc/ZRwhHFC3/transcription.png"
-                      className="w-20 mx-auto"
+                      className="w-20  xx:w-16 xs:w-16 mx-auto"
                       width="512"
                       height="512"
                       alt="Content writer"
@@ -164,16 +164,16 @@ const Servicesect = () => {
                 </div>
               </div>
             </div>
-            <Link className="place-self-center grid" to={""}>
-              <div className="btn-two-container mt-10">
-                <button
-                  style={{ borderLeft: "2px solid #ef0909" }}
-                  className="text-xl font-extrabold btn-two mt-3"
-                >
-                  SEE MORE
-                </button>
-              </div>
-            </Link>
+
+            <div className="  grid place-content-center  mt-12">
+              <Link to={"/services"}>
+                <div className="btn-two-container ">
+                  <button className="text-xl font-extrabold btn-two mt-3 w-[9rem] h-[3rem]">
+                    SEE MORE
+                  </button>
+                </div>
+              </Link>
+            </div>
           </div>
         </section>
       </div>

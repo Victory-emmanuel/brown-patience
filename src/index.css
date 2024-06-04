@@ -120,11 +120,11 @@ svg {
 /*Main button styles*/
 .btn-two {
   position: relative;
-  height: fit-content;
+
   display: flex;
   justify-content: left;
   align-items: center;
-
+  height: fit-content;
   text-align: center;
   text-indent: 50px;
   transition: 600ms;

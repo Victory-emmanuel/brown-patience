@@ -46,15 +46,24 @@ const Testimonial = () => {
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 800,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
-          initialSlide: 2,
+          infinite: true,
+          dots: true,
         },
       },
       {
-        breakpoint: 480,
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
+        },
+      },
+      {
+        breakpoint: 400,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -66,7 +75,7 @@ const Testimonial = () => {
     <>
       <div id="testimonial">
         <section className="py-16 bg-extraClr px-12">
-          <div className="container m-auto px-6 text-gray-600 dark:text-gray-300 md:px-12 xl:px-6">
+          <div className=" m-auto px-6 text-gray-600 dark:text-gray-300 md:px-12 xl:px-6">
             <div className="mb-20 space-y-4 px-6 md:px-0">
               <h2 className="text-center text-2xl font-bold text-gray-800 dark:text-white md:text-4xl">
                 What Our Customers Have To Say

@@ -26,9 +26,9 @@ const NavBar = () => {
   ];
   return (
     <>
-      <NavWrapper id="nav" className="px-12 py-8 drop-shadow-md">
+      <NavWrapper id="nav" className="px-12 py-2 drop-shadow-md">
         <div>
-          <Logo className="w-[12rem]" src={logo} />
+          <Logo className="w-[11rem]" src={logo} />
           <Logo2 className="" src={logo2} alt="" />
         </div>
         <StyledMenuIcon
@@ -50,7 +50,7 @@ const NavBar = () => {
         </NavWrapperLink>
         <NavWrapperLinkIcon active={active}>
           <Link>
-            <StyledNavBtn className="w-[11rem] py-5 px-7 mx-auto md:my-6 sm:w-[13rem] sm:h-[4.5rem]  bg-extraClr h-[3.5rem] my-3 flex items-center justify-center rounded-xl cursor-pointer relative overflow-hidden transition-all duration-500 ease-in-out shadow-md hover:scale-105 hover:text-white before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-accent before:to-lightAccent before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-xl hover:before:left-0 text-[#343434]">
+            <StyledNavBtn className="w-[11rem] py-5 px-7 mx-auto md:my-6 sm:w-[13rem] sm:h-[4.5rem]  bg-extraClr h-[2.5rem] my-3 flex items-center justify-center rounded-xl cursor-pointer relative overflow-hidden transition-all duration-500 ease-in-out shadow-md hover:scale-105 hover:text-white before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-accent before:to-lightAccent before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-xl hover:before:left-0 text-[#343434]">
               CONTACT US
             </StyledNavBtn>
           </Link>

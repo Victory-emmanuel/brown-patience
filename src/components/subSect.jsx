@@ -5,7 +5,7 @@ const SubSect = () => {
     <>
       <div id="sub-sect">
         <div className="py-16">
-          <div className="container m-auto space-y-8 px-6 text-gray-500 md:px-12 lg:px-20">
+          <div className=" m-auto space-y-8 px-6 text-gray-500 md:px-12 lg:px-20">
             <div className="justify-center gap-6 text-center md:flex md:text-left lg:items-center lg:gap-16">
               <div
                 className="order-last mb-6 bg-accent  md:mb-0 md:w-6/12 lg:w-6/12 p-12"
@@ -15,10 +15,10 @@ const SubSect = () => {
                 }}
               >
                 <div className="mb-6">
-                  <h2 className=" font-bold lg:mb-6 text-primary md:text-5xl dark:text-white">
+                  <h2 className=" font-bold mb-6 xx:text-2xl xs:text-3xl text-primary md:text-5xl dark:text-white">
                     Monthly Membership
                   </h2>
-                  <p className="text-2xl text-primary mt-4 dark:text-white">
+                  <p className="text-2xl xx:text-left xs:text-left ss:text-left xx:text-lg xs:text-xl text-primary mt-4 dark:text-white">
                     Chooose your category as an author , a solo entreprenuer or
                     both.
                   </p>
@@ -28,7 +28,7 @@ const SubSect = () => {
                     Your investment:
                   </p>
                   <ul className=" list-disc mt-4">
-                    <li className="text-xl mb-8  text-primary ">
+                    <li className="text-xl mb-8  xx:text-left xs:text-left ss:text-left text-primary ">
                       <del>N</del>15,000 / month -
                       <strong className="pl-2">
                         Guidance for Writing Solopreneurs.
@@ -38,7 +38,7 @@ const SubSect = () => {
                         months at once - <strong>20% discount</strong>
                       </p>
                     </li>
-                    <li className="text-xl mb-4  text-primary ">
+                    <li className="text-xl mb-4  xx:text-left xs:text-left ss:text-left text-primary ">
                       <del>N</del>25,000 / month - for the Coaching Fee.
                       <p className="  p-6 rounded mt-2 ml-6  bg-primary text-sm font-semibold text-secondary">
                         No limit on chapters. You may send in a chapter a week,
@@ -63,7 +63,7 @@ const SubSect = () => {
                 <div className="">
                   <img
                     src="https://i.postimg.cc/J7NtsV2v/IMG-20220722-WA0032-01-jpeg.jpg"
-                    className="rounded-lg"
+                    className="rounded-lg inline-block xx:hidden xs:hidden "
                     width="640"
                     height="960"
                     alt="profile img"

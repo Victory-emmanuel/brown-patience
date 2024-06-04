@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 const MyStory = () => {
   return (
     <>
-      <div id="my-story">
-        <section className="bg-extraClr dark:bg-secondary px-12">
+      <div id="my-store ">
+        <section className="ss:bg-extraClr xs:bg-[rgba(0,0,0,0.61)] dark:bg-secondary relative xs:px-6 px-12">
           <div className="gap-8 items-center py-24 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
             <div className="m-auto grid">
               <img
-                className="justify-self-start lg:mr-12 md:mr-0"
+                className="xs:absolute ss:relative xs:top-0 xs:left-0 xs:w-full xs:-z-10  justify-self-start lg:mr-12 md:mr-0"
                 src="https://i.postimg.cc/YSMKgSpT/untitled-1082-01-jpeg.jpg"
                 alt="brown patience"
                 style={{
@@ -20,20 +20,20 @@ const MyStory = () => {
 
             <div className="mt-4 md:mt-0 text-center">
               <h4
-                style={{
-                  borderBottom: "3px solid #343434 ",
-                  paddingBottom: "1rem",
-                  display: "inline-block",
-                }}
-                className="lg:mb-24 font-light"
+                // style={{
+                //   borderBottom: "3px solid #343434 ",
+                //   paddingBottom: "1rem",
+                //   display: "inline-block",
+                // }}
+                className="ss:mb-24 xs:mb:12 xs:text-primary ss:text-secondary+ border-b-4  font-light"
               >
                 My Story
               </h4>
-              <h2 className="mb-12 text-4xl tracking-tight font-extrabold text-accent dark:text-white">
+              <h2 className="mb-12 text-4xl tracking-tight font-extrabold ss:text-accent xs:text-primary dark:text-white">
                 Meet Brown Patience
               </h2>
 
-              <p className="mb-6 font-light text-secondary md:text-lg dark:text-secondary">
+              <p className="mb-6 font-light  xs:text-primary ss:text-secondary xs:text-base md:text-lg dark:text-secondary">
                 A writer who knows the power of well-aimed words. Brown has done
                 most of her learning within books. It's why she knows—on a
                 personal level—that words can heal, provoke, redirect and
