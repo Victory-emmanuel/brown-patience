@@ -1,5 +1,3 @@
-import { Menu } from "@mui/icons-material";
-
 import { Link, NavLink } from "react-router-dom";
 import styled from "styled-components";
 
@@ -22,7 +20,7 @@ const NavWrapper = styled.nav`
     grid-template-columns: 1fr;
     grid-gap: 2rem;
   }
-  @media (max-width: 450px) {
+  @media (max-width: 400px) {
     padding: 1rem;
   }
 `;
@@ -95,6 +93,9 @@ const StyledNavText = styled(NavLink)`
     font-size: 1.5rem;
     text-align: center;
   }
+  @media (max-width: 800px) {
+    padding-top: 1rem;
+  }
 `;
 const StyledNavBtn = styled.button`
   @media (max-width: 600px) {
@@ -105,28 +106,33 @@ const StyledNavBtn = styled.button`
   }
 `;
 
-const StyledMenuIcon = styled(Menu)`
-  display: none;
+const DropdownMenu = styled.div`
+  display: ${(props) => (props.open ? "block" : "none")};
   position: absolute;
-
-  cursor: pointer;
-  color: #fff;
-  font-size: 2rem;
-  @media (max-width: 1000px) {
-    display: block;
-    top: 30px;
-    right: 20px;
-    font-size: 3rem;
-    color: #ef0909;
-  }
+  background-color: #fff;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  top: 100%;
+  left: 0;
+  width: 15rem;
+  border-radius: 10px;
+  padding: 1rem 1rem;
   @media (max-width: 600px) {
-    top: 40px;
-    right: 30px;
+    position: relative;
   }
-  @media (max-width: 400px) {
-    top: 20px;
-    right: 30px;
-    font-size: 2rem;
+`;
+
+const DropdownItem = styled(Link)`
+  color: #343434;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: 200ms ease-in-out;
+  &:hover {
+    background-color: #ddd;
+  }
+  @media (max-width: 1000px) {
+    text-align: left;
   }
 `;
 const SocialsMain = styled.div`
@@ -153,16 +159,15 @@ const SocialsMain = styled.div`
     padding: 1rem 3rem;
   }
   @media (max-width: 600px) {
+    padding: 1rem 2rem;
   }
   @media (max-width: 400px) {
+    padding: 1rem 1.5rem;
   }
 `;
 const SocialsLink = styled(Link)`
   color: #fefefe;
   transition: 200ms ease-in-out;
-  @media (max-width: 400px) {
-    width: 0.5rem;
-  }
 `;
 
 export {
@@ -173,7 +178,8 @@ export {
   StyledNavBtn,
   StyledNavText,
   NavWrapperLinkIcon,
-  StyledMenuIcon,
+  DropdownMenu,
+  DropdownItem,
   SocialsLink,
   SocialsMain,
 };

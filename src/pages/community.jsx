@@ -4,16 +4,16 @@ import { Link } from "react-router-dom";
 const community = () => {
   return (
     <>
-      <div id="community">
+      <div className="" id="community">
         {/* HEADER */}
-        <div className="relative flex flex-col py-16 lg:pt-0 lg:flex-col lg:pb-0">
-          <div className="flex bg-grey flex-col items-start w-full max-w-xl px-4 mx-auto lg:px-12 lg:max-w-screen-xl">
+        <div className="  xx:hidden sm:flex flex-col gap-0 sm:pt-0 sm:flex-row ">
+          <div className="flex basis-1/2 bg-extraClr flex-col items-start w-full  mx-auto md:px-12 ss:px-6  py-16 sm:max-w-screen-xl">
             <div className="mb-16 lg:my-40  lg:pr-5 ">
               <div className=" text-center mb-6">
                 <h1 className="max-w-xl mb-12 font-sans lg:text-6xl font-bold tracking-tight text-green sm:text-4xl sm:leading-none">
                   Welcome To Oasis
                 </h1>
-                <p className="text-2xl max-w-xl  text-secondary md:text-lg">
+                <p className="text-2xl max-w-xl  text-secondary dark:text-primary ss:text-base md:text-lg">
                   You don't like what happens in your thoughts. You'd like to
                   change that. This is an <strong>Oasis</strong> of Purifying
                   Water & directions for use.
@@ -25,29 +25,54 @@ const community = () => {
                     "https://www.instagram.com/theoasis.network?igsh=aWJ6YnhoazB6bDIy"
                   }
                 >
-                  <button className="w-[15rem] py-5 px-7 mx-auto gap-4  bg-white h-[5rem] my-3 flex items-center justify-center rounded-xl cursor-pointer relative overflow-hidden transition-all duration-500 ease-in-out shadow-md hover:scale-105 hover:text-white before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-secondary before:to-green before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-xl hover:before:left-0 text-[#343434]">
+                  <button className="md:w-[15rem]  md:h-[5rem] ss:w-[13rem]  ss:h-[4.7rem] ss:px-6   py-5 md:px-7 mx-auto gap-4  bg-white my-3 flex items-center justify-center rounded-xl cursor-pointer relative overflow-hidden transition-all duration-500 ease-in-out shadow-md hover:scale-105 hover:text-white before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-secondary before:to-green before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-xl hover:before:left-0 text-[#343434]">
                     <span className="">LEARN MORE</span> <Instagram />
                   </button>
                 </Link>
               </div>
             </div>
           </div>
-          <div className="inset-y-0 right-0 w-full max-w-xl px-4 mx-auto lg:pl-8 lg:pr-0 lg:mb-0 lg:mx-0 lg:w-1/2 lg:max-w-full lg:absolute xl:px-0">
+          <div className="  basis-1/2 right-0 w-full   mx-auto  sm:mb-0 sm:mx-0  sm:max-w-full  xl:px-0">
             <img
-              className="object-cover w-full h-56 rounded shadow-lg lg:rounded-none lg:shadow-none sm:h-96 lg:h-full"
+              className="object-cover w-full     sm:h-full"
               src=" https://i.postimg.cc/KYztsxg0/IMG-20220621-WA0003.jpg"
               alt=""
             />
           </div>
         </div>
+        {/* Hero small screen */}
+        <section className=" hero    ">
+          <div className=" xx:grid img2  ss:h-[40rem] xs:h-[32rem] gap-y-12  sm:hidden text-center ">
+
+            <h1 className="ss:text-6xl xs:text-5xl xx:text-4xl text-primary  inline-block py-0 ss:mt-[8rem] xs:mt-[6rem] xx:mt-[4rem]  mx-auto  rounded-lg  sm:font-extrabold xx:font-bold ">
+            Welcome To 
+            </h1>
+            {/* <p className="sm:text-2xl xx:text-xl xx:w-full ss:w-[75%] mx-auto  text-white xx:py-3  ss:py-6 ">
+            You don't like what happens in your thoughts. You'd like to
+                  change that. This is an <strong>Oasis</strong> of Purifying
+                  Water & directions for use.
+            </p> */}
+            <div className=" grid place-content-center mt-[12rem] mx-auto">
+                <Link
+                  to={
+                    "https://www.instagram.com/theoasis.network?igsh=aWJ6YnhoazB6bDIy"
+                  }
+                >
+                  <button className="ss:w-[15rem]   ss:h-[5rem] xs:w-[13rem]  xs:h-[4rem]  xx:w-[11rem]  xx:h-[3.5rem]  mx-auto gap-4  bg-white my-12 flex items-center justify-center rounded-xl cursor-pointer relative overflow-hidden transition-all duration-500 ease-in-out shadow-md hover:scale-105 hover:text-white before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-secondary before:to-green before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-xl hover:before:left-0 text-[#343434]">
+                    <span className="">LEARN MORE</span> <Instagram />
+                  </button>
+                </Link>
+              </div>
+          </div>
+        </section>
         {/* ORIGIN SECTION */}
-        <div className="px-4 my-24 mx-12 py-16 rounded-lg  bg-green md:px-24 lg:px-8 lg:py-20">
+        <section className="   ss:mx-12 py-12 sm:rounded-lg  xx:px-0 bg-green my-12 sm:px-8 sm:py-20">
           <div className="flex flex-col justify-center md:pr-8 xl:pr-0 ">
             <div className=" mb-6">
-              <h2 className="mb-12 font-sans text-3xl font-bold tracking-tight text-center text-white sm:text-4xl sm:leading-none">
+              <h2 className="mb-12 ss:text-3xl xx:text-2xl font-bold tracking-tight text-center text-white sm:text-4xl sm:leading-none">
                 How The Oasis Came About
               </h2>
-              <div className=" px-12 ">
+              <div className=" sm:px-12 xx:px-6 ">
                 <p className="mb-6 font-medium  lg:text-lg text-primary lg:text-left md:text-lg md:text-center">
                   Pornography found me early in primary school. Primary school
                   is that time when you're around 10 years old. Yeah, that's
@@ -114,37 +139,53 @@ const community = () => {
               </Link>
             </div>
           </div>
-        </div>
+        </section>
         {/* BOOK RECOMMENDATIONS */}
-        <section className="py-24 bg-primary px-12">
-          <div className=" xl:container mx-auto px-6 md:px-12">
-            <div className="my-16 items-center grid grid-cols-2">
-              <h4 className=" text-2xl font-bold text-secondary dark:text-white md:text-2xl">
-                RECOMMENDED BOOKS
+        
+        <section className="  mx-auto px-6 md:px-12">
+            <div className="text-center">
+              <h2
+                style={{
+                  borderBottom: "2px solid #343434",
+                 
+                  paddingBottom: "1rem",
+                }}
+                className=" mb-12 text-center text-2xl xx:hidden ss:inline-block font-bold text-secondary dark:text-white md:text-4xl"
+              >
+                Our Book
+              </h2>
+            </div>
+
+            <div className="my-16 items-center grid ss:grid-cols-2 xx:grid-cols-1">
+              <h4 className=" text-2xl ss:block xx:hidden font-bold text-secondary dark:text-white md:text-2xl">
+                POPULAR
               </h4>
-              <div className="justify-self-end">
-                <Link to={"/books"}>
-                  <button className="relative ml-6 px-6 py-4 text-secondary text-base font-bold nded-full overflow-hidden bg-extraClr rounded-lg transition-all duration-800 ease-in-out shadow-md hover:scale-105 hover:text-white hover:shadow-lg active:scale-90 before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-accent before:to-secondary before:transition-all before:duration-1000 before:ease-in-out before:z-[-1] before:rounded-lg hover:before:left-0">
+              <div className="ss:justify-self-end xx:justify-self-center ">
+                <Link to={""}>
+                  <button className="relative ss:ml-6 xx:ml-0 ss:px-6 py-4 xx:px-16   text-secondary text-base font-bold nded-full overflow-hidden bg-extraClr rounded-lg transition-all duration-800 ease-in-out shadow-md hover:scale-105 hover:text-white hover:shadow-lg active:scale-90 before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-accent before:to-secondary before:transition-all before:duration-1000 before:ease-in-out before:z-[-1] before:rounded-lg hover:before:left-0">
                     ALL BOOKS
                   </button>
                 </Link>
               </div>
             </div>
-            <div className="grid gap-6 px-4 sm:px-0 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
-              <div className="group relative rounded-3xl  space-y-6 overflow-hidden">
+            <div className="grid gap-6 ss:px-4 xx:px-0 sm:px-0 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
+              <div className="group relative rounded-3xl xx:w-full ss:space-y-6 overflow-hidden">
                 <img
-                  className="mx-auto w-[37.5rem] h-[50rem] grayscale object-cover object-top ransition duration-500 group-hover:scale-105 group-hover:grayscale-0"
+                  className="mx-auto h-full w-full grayscale object-cover object-top ransition duration-500 group-hover:scale-105 group-hover:grayscale-0"
                   src="https://i.postimg.cc/X7HmPYNM/IMG-20220917-WA0018.webp"
                   alt="woman"
+                  loading="lazy"
+                  width="640"
+                  height="805"
                 />
                 <div className="absolute bottom-0 inset-x-0 h-max mt-auto px-8 py-6 bg-accent dark:bg-white translate-y-24 transition duration-300 ease-in-out group-hover:translate-y-0">
                   <div>
                     <h4 className="text-xl font-semibold dark:text-gray-700 text-white">
                       Brown Patience
                     </h4>
-                    <span className="block text-sm text-white">Writer</span>
+                    <span className="block text-sm text-white dark:text-secondary">Writer</span>
                   </div>
-                  <p className="mt-8 text-primary dark:text-gray-600">
+                  <p className="mt-2 text-primary dark:text-gray-600">
                     This is a book about porn addiction. About the darkness that
                     persists even after you've stopped viewing it. All based on
                     true experience......
@@ -153,38 +194,43 @@ const community = () => {
               </div>
               <div className="group relative rounded-3xl  space-y-6 overflow-hidden">
                 <img
-                  className="mx-auto w-[37.5rem] h-[50rem] grayscale object-cover object-top ransition duration-500 group-hover:scale-105 group-hover:grayscale-0"
+                  className="mx-auto h-full w-full grayscale object-cover object-top ransition duration-500 group-hover:scale-105 group-hover:grayscale-0"
                   src="https://i.postimg.cc/dQByTBQ2/20240507-073747.jpg"
                   alt="Book cover"
+                  loading="lazy"
+                  width="640"
+                  height="805"
                 />
                 <div className="absolute bottom-0 inset-x-0 h-max mt-auto px-8 py-6 bg-accent dark:bg-white translate-y-24 transition duration-300 ease-in-out group-hover:translate-y-0">
                   <div>
                     <h4 className="text-xl font-semibold dark:text-gray-700 text-white">
                       Brown Patience
                     </h4>
-                    <span className="block text-sm text-white">Writer</span>
+                    <span className="block text-sm text-white dark:text-secondary">Writer</span>
                   </div>
-                  <p className="mt-8 text-primary dark:text-gray-600">
-                    What you do with your mind will turn and do you. I should
-                    know. If you brood and ruminate on depressing thoughts,
-                    you'll be depressed.............
+                  <p className="mt-2 text-primary dark:text-gray-600">
+                  What you do with your mind will turn and do you. I should
+                    know. If you brood and ruminate on depressing thoughts.....
                   </p>
                 </div>
               </div>
               <div className="group relative rounded-3xl  space-y-6 overflow-hidden">
                 <img
-                  className="mx-auto  w-[37.5rem] h-[50rem] grayscale object-cover object-top transition duration-500 group-hover:scale-105 group-hover:grayscale-0"
+                  className="mx-auto h-full w-full grayscale object-cover object-top transition duration-500 group-hover:scale-105 group-hover:grayscale-0"
                   src="https://i.postimg.cc/HxnPkZyj/20240207-064011.jpg"
                   alt="woman"
+                  loading="lazy"
+                  width="640"
+                  height="805"
                 />
                 <div className="absolute bottom-0 inset-x-0 h-max mt-auto px-8 py-6 bg-accent dark:bg-white translate-y-24 transition duration-300 ease-in-out group-hover:translate-y-0">
                   <div>
                     <h4 className="text-xl font-semibold dark:text-gray-700 text-white">
                       Brown Patience
                     </h4>
-                    <span className="block text-sm text-white">Writer</span>
+                    <span className="block text-sm text-white dark:text-secondary">Writer</span>
                   </div>
-                  <p className="mt-8 text-primary dark:text-gray-600">
+                  <p className="mt-2 text-primary dark:text-gray-600">
                     Fantasy is about the sexual mental struggles we face. Those
                     steamy thoughts that feel like you're engaging in a porn
                     video production.......
@@ -192,8 +238,7 @@ const community = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
       </div>
     </>
   );

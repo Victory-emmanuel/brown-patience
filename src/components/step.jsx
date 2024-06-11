@@ -2,13 +2,13 @@ const Step = () => {
   return (
     <>
       <div id="step">
-        <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-          <div className="text-center mb-12">
-            <h2>Steps To Get Your Voice Heard</h2>
+        <div className="px-4 py-16 mx-auto md:max-w-full lg:max-w-screen-xl ss:px-12 xx:px-6 md:px-24 lg:px-8 lg:py-20">
+          <div className="text-center  dark:text-primary mb-12">
+            <h2 className="ss:text-4xl xx:text-2xl">Steps To Get Your Voice Heard</h2>
           </div>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-5">
-            <div className="grid gap-6 md:grid-cols-2 md:col-span-2 lg:col-span-3">
-              <div className="rounded-lg lg:p-5 transition duration-300 bg-accent">
+            <div className="grid gap-6 sm:grid-cols-2   md:col-span-2 lg:col-span-3">
+              <div className="rounded-lg xx:p-4 ss:p-5 transition duration-300 bg-accent">
                 <div className="flex items-center mb-1">
                   <span className="flex items-center bg-white p-2  justify-center w-4 h-4 mr-2 text-xs font-medium text-accent rounded bg-deep-purple-accent-400">
                     1
@@ -23,7 +23,7 @@ const Step = () => {
                   write.
                 </p>
               </div>
-              <div className="rounded lg:p-5 lg:transition lg:duration-300 bg-extraClr">
+              <div className="rounded xx:p-4 ss:p-5 lg:transition lg:duration-300 bg-extraClr">
                 <div className="flex items-center mb-1">
                   <span className="flex items-center p-2 bg-accent justify-center w-4 h-4 mr-2 text-xs font-medium text-white rounded ">
                     2
@@ -38,7 +38,7 @@ const Step = () => {
                   to return to the drawing board.
                 </p>
               </div>
-              <div className="rounded lg:p-5 lg:transition lg:duration-300 bg-extraClr">
+              <div className="rounded xx:p-4 ss:p-5 lg:transition lg:duration-300 bg-extraClr">
                 <div className="flex items-center mb-1">
                   <span className="flex items-center p-2 bg-accent justify-center w-4 h-4 mr-2 text-xs font-medium text-white rounded ">
                     3
@@ -53,7 +53,7 @@ const Step = () => {
                   the work as we go. If you like how I's going, we carry on.
                 </p>
               </div>
-              <div className="rounded lg:p-5 lg:transition lg:duration-300 bg-extraClr">
+              <div className="rounded xx:p-4 ss:p-5 lg:transition lg:duration-300 bg-extraClr">
                 <div className="flex items-center mb-1">
                   <span className="flex items-center p-2 bg-accent justify-center w-4 h-4 mr-2 text-xs font-medium text-white rounded ">
                     4

@@ -25,7 +25,7 @@ const Email = () => {
       <div id="email">
         <div className="bg-accent rounded-lg">
           <div className="py-8 lg:py-16 px-4 mx-auto ">
-            <h2 className="mb-12 text-4xl tracking-tight font-extrabold text-center text-primary">
+            <h2 className="mb-12 ss:text-4xl xx:text-2xl tracking-tight font-extrabold text-center text-primary">
               Ask Your Questions
             </h2>
 
@@ -45,7 +45,7 @@ const Email = () => {
                 <input
                   type="email"
                   id="email"
-                  className="shadow-sm bg-gray-50 border border-gray-300 text-primary text-base rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                  className="shadow-sm bg-gray-50 border border-gray-300 text-primary text-base rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-secondary dark:border-secondary dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
                   placeholder="mail@gmail.com"
                   required
                   name="from_email"
@@ -61,7 +61,7 @@ const Email = () => {
                 <input
                   type="text"
                   id="subject"
-                  className="block p-3 w-full text-base text-primary bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                  className="block p-3 w-full text-base text-primary bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-secondary dark:border-secondary dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
                   placeholder="Name"
                   required
                   name="from_name"
@@ -70,14 +70,14 @@ const Email = () => {
               <div className="sm:col-span-2">
                 <label
                   for="message"
-                  className="block mb-2 text-lg font-semibold text-primary dark:text-gray-400"
+                  className="block mb-2 text-lg font-semibold text-primary dark:text-primary"
                 >
                   Your Message
                 </label>
                 <textarea
                   id="message"
                   rows="6"
-                  className="block p-2.5 w-full text-base text-secondary bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                  className="block p-2.5 w-full text-base text-secondary bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-secondary dark:border-secondary dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
                   placeholder="Leave a comment..."
                   name="message"
                 />

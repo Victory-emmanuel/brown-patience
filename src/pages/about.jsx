@@ -3,24 +3,25 @@ import React from "react";
 const About = () => {
   return (
     <>
-      <div id="about" className="py-4">
-        <div className="grid py-24 text-center img px-12 ">
-          <h1 className="text-6xl font-extrabold text-white  py-6">About Me</h1>
-          <p className="text-2xl w-[50%] mx-auto text-white  py-6 ">
+      <div id="about" className="md:py-4">
+        <section className="grid py-24 text-center img ss:px-12 xx:px-6 ">
+          <h1 className="sm:text-6xl xx:text-4xl font-extrabold text-white  py-6">About Me</h1>
+          <p className="text-2xl md:w-[50%] ss:w-[75%] xx:w-full mx-auto text-white  py-6 ">
             “...I'll run the course you lay out for me if you'll just show me
             how. God, teach me lessons for living so I can stay the course. Give
             me insight so I can do what you tell me—my whole life one long,
             obedient response...” ( Psalms 119:32-34, MSG ).
           </p>
-        </div>
-        <section className=" dark:bg-secondary py-16  px-12">
-          <div className="bg-white gap-8 items-center py-24 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+        </section>
+        <section className=" dark:bg-secondary py-16 xx:px-6 ss:px-12">
+          <div className="bg-primary dark:bg-secondary gap-8 items-center ss:py-24 xx:py-12 mx-auto max-w-screen-xl xl:gap-16 grid md:grid-cols-2 sm:py-16 lg:px-6">
             <div className="mt-4 md:mt-0 text-left">
-              <h4 className="lg:mb-6 font-light">Where It Began For</h4>
+              <h4 className="lg:mb-6 font-light dark:text-accent">Where It Began For</h4>
               <h2 className="mb-12 text-4xl tracking-tight font-extrabold text-accent dark:text-white">
                 Brown Patience
               </h2>
-              <p className="mb-6 font-light text-secondary md:text-lg dark:text-secondary">
+             
+              <p className="mb-6 font-light text-secondary md:text-lg dark:text-primary">
                 In 2014, during secondary school, I cherished a notebook filled
                 with my stories until it went missing, leaving me with a
                 lingering sense of loss. Despite this setback, I triumphed in a
@@ -59,7 +60,7 @@ const About = () => {
             </div>
             <div className="grid">
               <img
-                className="justify-self-end lg:mr-12 md:mr-0 w-[32rem] h-[40rem]"
+                className="justify-self-end lg:mr-12 md:mr-0 md:w-[32rem] md:h-[40rem] w-0"
                 src="https://i.postimg.cc/6qKm3ZP8/untitled-1027-01-jpeg.webp"
                 alt="brown patience"
                 style={{
@@ -69,10 +70,10 @@ const About = () => {
               />
             </div>
           </div>
-          <div className="bg-white gap-8 items-center py-24 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+          <section className="bg-white dark:bg-secondary gap-8 items-center ss:py-24 xx:py-12 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
             <div className="m-auto grid place-content-start">
               <img
-                className="justify-self-start lg:mr-12 md:mr-0  "
+                className="justify-self-start mb-6 lg:mr-12 md:mr-0  "
                 src="https://i.postimg.cc/ncz1xMZ4/untitled-1082-01-jpeg.jpg"
                 alt="brown patience"
                 style={{
@@ -83,12 +84,12 @@ const About = () => {
             </div>
 
             <div className="mt-4 md:mt-0 text-left">
-              <h4 className="lg:mb-6 font-light">The Story Of</h4>
+              <h4 className="lg:mb-6 font-light dark:text-accent">The Story Of</h4>
               <h2 className="mb-12 text-4xl tracking-tight font-extrabold text-accent dark:text-white">
                 Brown Patience
               </h2>
 
-              <p className="mb-6 font-light text-secondary md:text-lg dark:text-secondary">
+              <p className="mb-6 font-light text-secondary md:text-lg dark:text-primary">
                 Brown has done most of her learning within books. It's why she
                 knows—on a personal level—that words can heal, provoke, redirect
                 and transform a person. Words have always drawn her. It's why
@@ -104,36 +105,33 @@ const About = () => {
               </p>
               <div
                 style={{
-                  borderBottom: "1px solid #343434 ",
-                  borderTop: "1px solid #343434 ",
+                  
                   display: "inline-block",
                 }}
-                className="py-6  mt-12 "
+                className="py-6  mt-12 border-solid border-t-2 border-t-accent border-b-accent  dark:border-t-primary border-b-2 dark:border-b-primary "
               >
                 <div
-                  style={{
-                    borderRight: "1px solid #343434 ",
-                  }}
-                  className=" inline-block  "
+                  
+                  className=" inline-block border-solid border-r-2 border-r-secondary dark:border-r-2 dark:border-r-primary "
                 >
-                  <h2 className="inline-block text-7xl text-accent  ">05</h2>
-                  <p className="inline-block pl-6 pr-12  ">
+                  <h2 className="inline-block ss:text-7xl xx:text-5xl text-accent  ">05</h2>
+                  <p className="inline-block pl-6 xs:pr-12 xx:pr-6 xs:text-base xx:text-xs dark:text-primary ">
                     Books <br />
                     Published
                   </p>
                 </div>
                 <div className="inline-block  ">
-                  <h2 className="inline-block pl-12 pr-6 text-7xl text-accent ">
+                  <h2 className="inline-block xs:pl-12 xx:pl-6 pr-6 ss:text-7xl xx:text-5xl text-accent ">
                     03
                   </h2>
-                  <p className="inline-block  ">
+                  <p className="inline-block xs:text-base xx:text-xs dark:text-primary  ">
                     Best <br />
                     Selling
                   </p>
                 </div>
               </div>
             </div>
-          </div>
+          </section>
         </section>
       </div>
     </>

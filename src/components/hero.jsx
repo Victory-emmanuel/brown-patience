@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <>
       <div id="hero">
-        <div className="lg:pb-32 xs:pb-12 ss:pb-16 ss:px-0  lg:px-12 bg-extraClr">
+        <div className="lg:pb-32 xs:pb-12 ss:pb-16 ss:px-0  lg:px-12 bg-extraClr dark:bg-secondary ">
           <div className=" m-auto px-6 xx:pt-8 pt-24 ss:py-12 md:px-12 lg:pt-[4.8rem] lg:px-7">
             <div className="grid lg:grid-cols-2 sm:grid-cols-1 items-center gap-12 px-2 md:px-0">
               <div className="col-span-1">

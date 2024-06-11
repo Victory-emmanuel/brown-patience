@@ -6,33 +6,43 @@ const Subs = () => {
     <>
       <div id="subs">
         {/* Hero */}
-        <div className="relative flex flex-col py-24 px-12 lg:pt-0 lg:flex-col lg:pb-0">
-          <div className="flex  flex-col items-start w-full max-w-xl px-4 mx-auto lg:px-8 lg:max-w-screen-xl">
-            <div className="mb-16 lg:my-40   lg:max-w-lg lg:pr-5">
-              <div className="max-w-xl mb-6">
-                <h2 className="max-w-lg mb-6 font-sans lg:text-5xl font-bold tracking-tight text-secondary sm:text-4xl sm:leading-none">
+
+        <div className="relative grid gap-8 lg:py-24 xx:py-12 lg:px-12 xx:p-6 lg:pt-0 ss:grid-cols-2 lg:pb-0">
+          <div className="flex flex-col items-start w-full ss:px-0 sm:px-4 mx-auto lg:px-8 lg:max-w-screen-xl">
+            <div className="mb-16 lg:my-40 xx:my-auto lg:max-w-lg lg:pr-5">
+              <div className="lg:max-w-xl  lg:mb-6 xx:my-auto">
+                <h2 className="max-w-lg  mb-6 font-sans lg:text-5xl font-bold tracking-tight text-accent ss:text-left xx:text-center ss:text-3xl sm:text-4xl sm:leading-none">
                   Our Subscription
                 </h2>
-                <p className="text-base mt-8 text-secondary md:text-lg">
+                <p className="sm:text-base ss:text-sm mt-8 text-secondary dark:text-primary md:text-lg  ss:text-left xx:text-center">
                   Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                   accusantium doloremque laudantium, totam rem aperiam, eaque
                   ipsa quae. explicabo.
                 </p>
+
+                <div className=" grid ss:place-content-start xx:place-content-center">
+                  <Link to={"https://wa.me/message/DOCQNYXAEPVDH1"}>
+                    <button className="w-[11rem] py-5 px-7   ss:mt-6 xx:mt-8 bg-white h-[4rem] my-3 rounded-xl cursor-pointer relative overflow-hidden transition-all duration-500 ease-in-out shadow-md hover:scale-105 hover:text-white before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-accent before:to-lightAccent before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-xl hover:before:left-0 text-[#343434]">
+                      CONTACT US
+                    </button>
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
-          <div className="inset-y-0 right-0 w-full max-w-xl px-4 mx-auto lg:pl-8 lg:pr-0 lg:mb-0 lg:mx-0 lg:w-1/2 lg:max-w-full lg:absolute xl:px-0">
+          <div className="w-full max-w-xl  ss:px-0 sm:px-4 mx-auto lg:pl-8 lg:pr-0 lg:mb-0 lg:mx-0 lg:max-w-full xl:px-0">
             <img
-              className="object-cover w-full h-56 rounded shadow-lg lg:rounded-none lg:shadow-none sm:h-96 lg:h-full"
+              className="object-cover w-[32rem]  rounded  lg:rounded-none lg:shadow-none sm:h-[24rem] lg:h-full"
               src="https://i.postimg.cc/FHzfL9r3/Blog-post-bro.png"
               alt=""
             />
           </div>
         </div>
+
         {/* Guidiance for solopreneur */}
         <section className="solopreneur">
-          <div className=" lg:py-24 grid lg:grid-cols-2 gap-4 lg:px-24 bg-extraClr ">
-            <div className="   md:px-0  grid  place-self-center">
+          <div className=" lg:py-24 xx:py-12 grid lg:grid-cols-2 gap-4 ss:px-12 xx:px-6 lg:px-24 bg-extraClr ">
+            <div className="   grid  place-self-center">
               <div className="mb-0 lg:pr-8 xl:pr-6 lg:text-left ">
                 <div className=" grid place-content-center mx-auto">
                   <Link to={""}>
@@ -40,14 +50,14 @@ const Subs = () => {
                       style={{
                         boxShadow: "2px 2px 28px -1px rgba(0,0,0,0.35)",
                       }}
-                      className="relative tracking-wide mb-12 ml-6 px-12 py-4 text-secondary text-xl font-bold  overflow-hidden bg-extraClr rounded-lg transition-all duration-800 ease-in-out shadow-md hover:scale-105 hover:text-white hover:shadow-lg active:scale-90 before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-accent before:to-secondary before:transition-all before:duration-1000 before:ease-in-out before:z-[-1] before:rounded-lg hover:before:left-0"
+                      className="relative tracking-wide mb-12 ss:ml-6 xx:px-6 ss:px-12 py-4 text-secondary text-xl font-bold  overflow-hidden bg-extraClr rounded-lg transition-all duration-800 ease-in-out shadow-md hover:scale-105 hover:text-white hover:shadow-lg active:scale-90 before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-accent before:to-secondary before:transition-all before:duration-1000 before:ease-in-out before:z-[-1] before:rounded-lg hover:before:left-0"
                     >
                       Guidance for Writing Solopreneurs
                     </button>
                   </Link>
                 </div>
                 <div className="">
-                  <p className="mb-6 font-medium  lg:text-lg text-secondary lg:text-left md:text-lg md:text-center">
+                  <p className="mb-6 font-medium  ss:text-lg text-secondary text-left xx:text-base ">
                     Are you a follower of Jesus with something to say? Has the
                     Holy Spirit been prompting you? Are you holding back due to
                     uncertainty in your writing skills? Do you need an editor,
@@ -55,16 +65,20 @@ const Subs = () => {
                     writing to publishing with the Guidance for Writing
                     Solopreneurs package.
                   </p>
-                  <h4>Who is a Writing Solopreneur?</h4>
-                  <p className="my-6 font-medium  lg:text-lg text-secondary lg:text-left md:text-lg md:text-center">
+                  <h4 className="ss:text-2xl xx:text-xl">
+                    Who is a Writing Solopreneur?
+                  </h4>
+                  <p className="my-6 font-medium  ss:text-lg text-secondary text-left xx:text-base ">
                     Writing solopreneurs wield influence with their pens,
                     impacting culture through faith-based writing, including
                     blogs, newsletters, articles, social media, and stories.
                     They have a burning message for the world and know how to
                     scatter their seeds to attract those in need.
                   </p>
-                  <h4>Who is this Guidance for?</h4>
-                  <p className="my-6 font-medium  lg:text-lg text-secondary lg:text-left md:text-lg md:text-center">
+                  <h4 className="ss:text-2xl xx:text-xl">
+                    Who is this Guidance for?
+                  </h4>
+                  <p className="my-6 font-medium  ss:text-lg text-secondary text-left xx:text-base ">
                     Guidance for Writing Solopreneurs is for budding and
                     experienced writers needing expert help to refine their
                     work. It offers someone who understands compelling writing
@@ -76,7 +90,7 @@ const Subs = () => {
                 <div className="  grid place-content-start  mt-12">
                   <Link to={"https://wa.me/message/DOCQNYXAEPVDH1"}>
                     <div className="btn-two-container ">
-                      <button className="text-xl font-extrabold btn-two mt-3 lg:w-[10rem] lg:h-[3.5rem]">
+                      <button className="text-xl font-extrabold btn-two mt-3 w-[10rem] h-[3.5rem]">
                         SUBSCRIBE
                       </button>
                     </div>
@@ -84,15 +98,15 @@ const Subs = () => {
                 </div>
               </div>
             </div>
-            <div className="bg grid place-content-top">
+            <div className="bg grid lg:place-content-top xx:place-content-center">
               <div
                 style={{ boxShadow: "2px 2px 28px -1px rgba(0,0,0,0.50)" }}
-                className="img ml-auto w-[32rem] h-[40rem] rounded-lg"
+                className="img lg:ml-auto lg:w-[32rem] lg:h-[40rem] lg:my-0 xx:my-6 md:w-[40rem] md:h-[48rem] ss:w-[32rem] ss:h-[40rem] xs:w-[24rem] xs:h-[32rem] xx:w-[20rem] xx:h-[28rem] rounded-lg"
               ></div>
             </div>
           </div>
-          <div className=" py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-12 lg:py-20">
-            <div className="grid gap-8 row-gap-5 lg:grid-cols-2">
+          <div className=" py-12 mx-auto md:max-w-full lg:max-w-screen-xl md:px-24 xx:px-6 ss:px-12 lg:py-20">
+            <div className="grid gap-8 row-gap-5 sm:grid-cols-2">
               <div className="relative  bg-extraClr p-px overflow-hidden transition duration-300 transform border rounded shadow-sm hover:scale-105 group hover:shadow-xl">
                 <div className="absolute bottom-0 left-0 w-full h-1 duration-300 origin-left transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100" />
                 <div className="absolute bottom-0 left-0 w-1 h-full duration-300 origin-bottom transform scale-y-0 bg-deep-purple-accent-400 group-hover:scale-y-100" />
@@ -154,7 +168,7 @@ const Subs = () => {
                 </div>
               </div>
             </div>
-            <div className="grid gap-8 my-12 row-gap-5 lg:grid-cols-4">
+            <div className="grid gap-8 my-12 row-gap-5 ss:grid-cols-2 lg:grid-cols-4">
               <div className="relative  bg-extraClr p-px overflow-hidden transition duration-300 transform border rounded shadow-sm hover:scale-105 group hover:shadow-xl">
                 <div className="absolute bottom-0 left-0 w-full h-1 duration-300 origin-left transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100" />
                 <div className="absolute bottom-0 left-0 w-1 h-full duration-300 origin-bottom transform scale-y-0 bg-deep-purple-accent-400 group-hover:scale-y-100" />
@@ -262,27 +276,26 @@ const Subs = () => {
           {/* FREQUENTLY ASKED QUESTION */}
           <SubsFaq />
         </section>
-        {/*COACHING FOR AUTHORS 
-r */}
+        {/*COACHING FOR AUTHORS */}
         <section className="authors">
-          <div className=" lg:py-12 grid lg:grid-cols-2 gap-4 lg:px-24 bg-extraClr ">
+          <div className=" lg:py-12 grid lg:grid-cols-2 gap-4 xx:p-6 sm:px-12 lg:px-24 bg-extraClr ">
             <div className="   md:px-0  grid  place-self-center">
-              <div className="mb-0 lg:pr-8 xl:pr-6 lg:text-left ">
+              <div className="mb-0 lg:pr-8 xl:pr-6 text-left ">
                 <div className=" grid place-content-center mx-auto">
                   <Link to={""}>
                     <button
                       style={{
                         boxShadow: "2px 2px 28px -1px rgba(0,0,0,0.35)",
                       }}
-                      className="relative tracking-wide mb-12 ml-6 px-12 py-4 text-secondary text-xl font-bold  overflow-hidden bg-extraClr rounded-lg transition-all duration-800 ease-in-out shadow-md hover:scale-105 hover:text-white hover:shadow-lg active:scale-90 before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-accent before:to-secondary before:transition-all before:duration-1000 before:ease-in-out before:z-[-1] before:rounded-lg hover:before:left-0"
+                      className="relative tracking-wide mb-12 ss:ml-6 ss:px-12 xx:px-6 py-4 text-secondary ss:text-xl xx:text-lg font-bold  overflow-hidden bg-extraClr rounded-lg transition-all duration-800 ease-in-out shadow-md hover:scale-105 hover:text-white hover:shadow-lg active:scale-90 before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-accent before:to-secondary before:transition-all before:duration-1000 before:ease-in-out before:z-[-1] before:rounded-lg hover:before:left-0"
                     >
                       COACHING FOR AUTHORS
                     </button>
                   </Link>
                 </div>
                 <div className="">
-                  <h4 className="">What's this about?</h4>
-                  <p className="my-6 font-medium  lg:text-lg text-secondary lg:text-left md:text-lg md:text-center">
+                  <h4 className="ss:text-2xl xx:text-xl">What's this about?</h4>
+                  <p className="my-6 font-medium  ss:text-lg text-secondary text-left xx:text-base">
                     This package is where I get to coach you stage by stage on
                     how to write your book. You'll be gaining two things: you'll
                     be learning to write better while authoring your book at the
@@ -292,8 +305,8 @@ r */}
                     And I sure know how to help you write (by yourself!) what
                     you need to write.
                   </p>
-                  <h4>Where do we begin?</h4>
-                  <p className="my-6 font-medium  lg:text-lg text-secondary lg:text-left md:text-lg md:text-center">
+                  <h4 className="ss:text-2xl xx:text-xl">Where do we begin?</h4>
+                  <p className="my-6 font-medium  ss:text-lg text-secondary text-left xx:text-base">
                     Every book on the earth has a purpose. Yours does too. And
                     that's where we'll begin — by defining your book's purpose,
                     zeroing in on its audience, and answering the big question:
@@ -317,15 +330,15 @@ r */}
                 </div>
               </div>
             </div>
-            <div className="bg grid place-content-top">
+            <div className="bg grid lg:place-content-top xx:place-content-center">
               <div
                 style={{ boxShadow: "2px 2px 28px -1px rgba(0,0,0,0.50)" }}
-                className="img ml-auto w-[32rem] h-[40rem] rounded-lg"
+                className="img lg:ml-auto lg:w-[32rem] lg:h-[40rem] lg:my-0 xx:my-6 md:w-[40rem] md:h-[48rem] ss:w-[32rem] ss:h-[40rem] xs:w-[24rem] xs:h-[32rem] xx:w-[20rem] xx:h-[28rem] rounded-lg"
               ></div>
             </div>
           </div>
-          <div className=" bg-extraClr py-12 lg:px-24">
-            <p className="my-6 font-medium  lg:text-lg text-secondary lg:text-left md:text-lg md:text-center">
+          <div className=" bg-extraClr py-12 sm:px-12 xx:px-6 lg:px-24">
+            <p className="my-6 font-medium  ss:text-lg text-secondary text-left xx:text-base">
               That, you see, is what this Coaching for Authors package is about.
               I'll be the person that helps you share your message, the one that
               helps you tell your story — so your readers will hear precisely
@@ -340,7 +353,7 @@ r */}
               that goal — so Theophilus would know the truth. Centuries later,
               we're also learning the truth from the book Luke wrote.
             </p>
-            <p className="my-6 font-medium  lg:text-lg text-secondary lg:text-left md:text-lg md:text-center">
+            <p className="my-6 font-medium  ss:text-lg text-secondary text-left xx:text-base">
               That's what books do; they embody truth. In the kind of format
               that lasts forever. Long after the author has breathed their last,
               the truth lives on. Do you know why you're so drawn to write this
@@ -350,10 +363,10 @@ r */}
               be your helpmeet. I'll be the one who ensures Theophilus hears
               precisely what Luke wants to say.
             </p>
-            <h4 className="">
+            <h4 className="ss:text-2xl xx:text-xl">
               What's the modality of this coaching? How do we do it?
             </h4>
-            <p className="my-6 font-medium  lg:text-lg text-secondary lg:text-left md:text-lg md:text-center">
+            <p className="my-6 font-medium  ss:text-lg text-secondary text-left xx:text-base">
               <ol class="list-decimal">
                 <li className="ml-6 mb-4">
                   We start by talking about the Big W's? Why are you writing
@@ -391,7 +404,7 @@ r */}
               </ol>
             </p>
             <p className="my-6 font-medium  lg:text-lg text-secondary lg:text-left md:text-lg md:text-center"></p>
-            <div className="grid gap-8 row-gap-5 lg:grid-cols-3">
+            <div className="grid gap-8 row-gap-5 ss:grid-cols-2 lg:grid-cols-3">
               <div className="relative bg-primary p-px overflow-hidden transition duration-300 transform border rounded shadow-sm hover:scale-105 group hover:shadow-xl">
                 <div className="absolute bottom-0 left-0 w-full h-1 duration-300 origin-left transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100" />
                 <div className="absolute bottom-0 left-0 w-1 h-full duration-300 origin-bottom transform scale-y-0 bg-deep-purple-accent-400 group-hover:scale-y-100" />
@@ -472,10 +485,10 @@ r */}
               </div>
             </div>
 
-            <div className="  grid place-content-center  mt-12">
+            <div className="  grid ss:place-content-center xx:place-content-start  mt-12">
               <Link to={"https://wa.me/message/DOCQNYXAEPVDH1"}>
                 <div className="btn-two-container ">
-                  <button className="text-xl font-extrabold btn-two mt-3 lg:w-[10rem] lg:h-[3.5rem]">
+                  <button className="text-xl font-extrabold btn-two mt-3 w-[10rem] h-[3.5rem]">
                     SUBSCRIBE
                   </button>
                 </div>

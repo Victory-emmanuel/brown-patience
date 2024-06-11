@@ -4,19 +4,19 @@ const Item = ({ title, children }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="border px-6  rounded shadow-sm">
+    <div className="border rounded  sm:dark:border-white sm:dark:border-solid sm:px-6 xx:py-8 shadow-sm">
       <button
         type="button"
         aria-label="Open item"
         title="Open item"
-        className="flex items-center justify-between w-full p-4 focus:outline-none"
+        className="flex items-center justify-between w-full sm:gap-1 xx:gap-2 sm:p-4 focus:outline-none"
         onClick={() => setIsOpen(!isOpen)}
       >
-        <h6 className="text-left font-bold lg:font-xl">{title}</h6>
-        <div className="flex items-center justify-center w-8 h-8 border rounded-full">
+        <h6 className=" lg:text-left sm:text-center xx:text-left  dark:text-primary sm:font-bold xx:text-lg ss:text-xl">{title}</h6>
+        <div className="flex ss:items-center xx:items-end dark:text-primary justify-center w-8 h-8 border rounded-full">
           <svg
             viewBox="0 0 24 24"
-            className={`w-3 text-secondary transition-transform duration-200 ${
+            className={`w-3 text-secondary dark:text-primary transition-transform duration-200 ${
               isOpen ? "transform rotate-180" : ""
             }`}
           >
@@ -33,7 +33,7 @@ const Item = ({ title, children }) => {
         </div>
       </button>
       {isOpen && (
-        <div className="p-4 bg-accent  pt-0">
+        <div className="p-4 bg-accent dark:bg-[#111]  pt-0">
           <p className="text-primary py-6">{children}</p>
         </div>
       )}
@@ -45,19 +45,20 @@ const SubsFaq = () => {
   return (
     <>
       <div id="faq">
-        <div className="grid grid-cols-2 pl-12 pr-20  gap-4 px-4 py-16 mr-auto  md:px-12 lg:px-8 lg:py-20">
+        <div className="grid lg:grid-cols-2 md:grid-cols-1 ss:pl-12 ss:pr-20  xx:px-6 gap-4 ss:px-4 py-16 mr-auto  md:px-12 lg:px-8 lg:py-20">
           <div className="">
             <div className="flex flex-col mb-16 lg:text-start sm:text-center">
               <div className=" lg:text-start sm:text-center ">
-                <h2 className=" mb-6 font-sans lg:mx-0 text-3xl font-bold leading-none tracking-tight text-accent sm:text-4xl md:mr-auto">
+                <h2 className="text-accent 
+                 mb-6 font-sans lg:mx-0 text-3xl dark:text-primary font-bold leading-none tracking-tight sm:text-4xl md:mx-auto">
                   Frequently Asked Questions
                 </h2>
-                <p className="">
+                <p className="dark:text-primary">
                   <b>Guidiance for solopreneur</b>
                 </p>
               </div>
             </div>
-            <div className="space-y-4 ">
+            <div className="space-y-4  ss:border-solid ss:border-primary  ">
               <Item title="Is there a limit to the number of write-ups I can send? ">
                 You can send up to 20 write-ups in a month (blog posts,
                 newsletters, articles, social media content,

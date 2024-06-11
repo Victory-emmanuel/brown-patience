@@ -14,16 +14,16 @@ const Footer = () => {
   return (
     <>
       <div id="footer">
-        <footer className="w-full bg-extraClr dark:bg-gray-900 xx:py-12 py-24 xx:px-0 px-12 ">
-          <div className="md:px-12 xx:px-6 lg:px-28">
-            <div className=" m-auto space-y-6 text-gray-600 dark:text-gray-300">
+        <footer className="w-full bg-extraClr dark:bg-[#111] xx:py-12 py-24 xx:px-0 px-12 ">
+          <div className="ss:px-12 xx:px-6 lg:px-28">
+            <div className=" m-auto space-y-6 text-secondary dark:text-primary">
               <div className="relative z-1 mb-12">
-                <Link to={"/"} aria-label="logo">
-                  <h3 className="text-accent text-center xx:font-xl font-2xl ">
+                <Link to={"/"} className="" aria-label="logo">
+                  <h3 className="text-accent text-center xx:text-2xl ss:text-4xl ">
                     The Brown Patience Company
                   </h3>
                 </Link>
-                <p className="text-md xx:text-base text-center pt-6 text-secondary">
+                <p className="text-md xx:text-base xx:text-left ss:text-center pt-6 text-secondary dark:text-primary">
                   Get your message to the people in need of it. Many gifted
                   persons have a message for their world, books they've been
                   planning to write, a community they long to impact, but they
@@ -36,7 +36,7 @@ const Footer = () => {
                 <li>
                   <Link
                     to={"/"}
-                    className="hover:text-accent font-bold font-xl"
+                    className="hover:text-accent dark:text-primary font-bold font-xl"
                   >
                     Home
                   </Link>
@@ -44,7 +44,7 @@ const Footer = () => {
                 <li>
                   <Link
                     to={"/services"}
-                    className="hover:text-accent font-bold font-xl"
+                    className="hover:text-accent dark:text-primary font-bold font-xl"
                   >
                     Services
                   </Link>
@@ -52,15 +52,15 @@ const Footer = () => {
                 <li>
                   <Link
                     to={"/about"}
-                    className="hover:text-accent font-bold font-xl"
+                    className="hover:text-accent dark:text-primary font-bold font-xl"
                   >
                     About us
                   </Link>
                 </li>
                 <li>
                   <Link
-                    to={"/boo"}
-                    className="hover:text-accent font-bold font-xl"
+                    to={"/book"}
+                    className="hover:text-accent dark:text-primary font-bold font-xl"
                   >
                     Books
                   </Link>
@@ -68,7 +68,7 @@ const Footer = () => {
                 <li>
                   <Link
                     to={"/subs"}
-                    className="hover:text-accent font-bold font-xl"
+                    className="hover:text-accent dark:text-primary font-bold font-xl"
                   >
                     Subscription
                   </Link>
@@ -76,22 +76,64 @@ const Footer = () => {
                 <li>
                   <Link
                     to={"/community"}
-                    className="hover:text-accent font-bold font-xl"
+                    className="hover:text-accent dark:text-primary font-bold font-xl"
                   >
                     Community
                   </Link>
                 </li>
               </ul>
-
-              <Box className="f-icon  pb-12 m-auto flex w-max items-center justify-between space-x-4">
+             {/* " Dark mode" */}
+              <div className="dark:block hidden">
+               <Box className="f-icon  pb-12 m-auto flex w-max items-center justify-between space-x-4">
+                <Link to="tel:+243996660436" aria-label="call">
+                  <Phone sx={{color:"#fff"}} />
+                </Link>
+                <Link to="https://wa.me/message/DOCQNYXAEPVDH1" >
+                  <WhatsApp sx={{color:"#fff"}} />
+                </Link>
+                <Link
+                  to={"https://www.facebook.com/Compelling_Storywriter?mibextid=ZbWKwL"}
+                  title="facebook"
+                  target="blank"
+                  aria-label="facebook"
+                >
+                  <Facebook sx={{color:"#fff"}} />
+                </Link>
+                <Link
+                  to="https://www.linkedin.com/in/patience-brown-3430ba17a"
+                  title="linkedin"
+                  aria-label="linkedin"
+                >
+                  <LinkedIn sx={{color:"#fff"}} />
+                </Link>
+                <Link
+                  to="https://instagram.com/contents_by_brownpatience?utm_medium=copy_link"
+                  title="instagram"
+                  aria-label="instagram"
+                >
+                  <Instagram sx={{color:"#fff"}} />
+                </Link>
+                <Link
+                  to="https://twitter.com/ContentsbyBrown?s=09"
+                  title="X"
+                  aria-label="X"
+                >
+                  <Twitter sx={{color:"#fff"}} />
+                </Link>
+              </Box>
+              </div>
+          
+          {/* Light mode */}
+              <div className="dark:hidden block">
+             <Box className="f-icon  pb-12 m-auto flex w-max items-center justify-between space-x-4">
                 <Link to="tel:+243996660436" aria-label="call">
                   <Phone />
                 </Link>
-                <Link to="mailto:hello@mail.com" aria-label="send mail">
+                <Link to="https://wa.me/message/DOCQNYXAEPVDH1" >
                   <WhatsApp />
                 </Link>
                 <Link
-                  to={"#"}
+                  to={"https://www.facebook.com/Compelling_Storywriter?mibextid=ZbWKwL"}
                   title="facebook"
                   target="blank"
                   aria-label="facebook"
@@ -99,27 +141,28 @@ const Footer = () => {
                   <Facebook />
                 </Link>
                 <Link
-                  to="https://www.linkedin.com/in/victory-emmanuel-54a090234/"
+                  to="https://www.linkedin.com/in/patience-brown-3430ba17a"
                   title="linkedin"
                   aria-label="linkedin"
                 >
                   <LinkedIn />
                 </Link>
                 <Link
-                  to="https://www.linkedin.com/in/victory-emmanuel-54a090234/"
-                  title="linkedin"
-                  aria-label="linkedin"
+                  to="https://instagram.com/contents_by_brownpatience?utm_medium=copy_link"
+                  title="instagram"
+                  aria-label="instagram"
                 >
                   <Instagram />
                 </Link>
                 <Link
-                  to="https://www.linkedin.com/in/victory-emmanuel-54a090234/"
-                  title="linkedin"
-                  aria-label="linkedin"
+                  to="https://twitter.com/ContentsbyBrown?s=09"
+                  title="X"
+                  aria-label="X"
                 >
                   <Twitter />
                 </Link>
               </Box>
+              </div>
 
               <div className="text-center">
                 <span className=" text-sm tracking-wide">

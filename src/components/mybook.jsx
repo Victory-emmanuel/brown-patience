@@ -28,6 +28,7 @@ const MyBook = () => {
           slidesToShow: 2,
           slidesToScroll: 1,
           initialSlide: 2,
+          dots: false,
         },
       },
       {
@@ -42,35 +43,35 @@ const MyBook = () => {
   return (
     <>
       <div id="my-book">
-        <section className="py-24 bg-primary px-12">
-          <div className=" xl:container mx-auto px-6 md:px-12">
+        <section className="ss:py-24 xx:py-12 bg-primary dark:bg-secondary xx:px-0 ss:px-12">
+          <div className="  mx-auto px-6 md:px-12">
             <div className="text-center">
               <h2
                 style={{
                   borderBottom: "2px solid #343434",
-                  display: "inline-block",
+                 
                   paddingBottom: "1rem",
                 }}
-                className=" mb-12 text-center text-2xl  font-bold text-secondary dark:text-white md:text-4xl"
+                className=" mb-12 text-center text-2xl xx:hidden ss:inline-block font-bold text-secondary dark:text-white md:text-4xl"
               >
                 Our Book
               </h2>
             </div>
 
-            <div className="my-16 items-center grid grid-cols-2">
-              <h4 className=" text-2xl font-bold text-secondary dark:text-white md:text-2xl">
+            <div className="my-16 items-center grid ss:grid-cols-2 xx:grid-cols-1">
+              <h4 className=" text-2xl ss:block xx:hidden font-bold text-secondary dark:text-white md:text-2xl">
                 POPULAR
               </h4>
-              <div className="justify-self-end">
-                <Link to={""}>
-                  <button className="relative ml-6 px-6 py-4 text-secondary text-base font-bold nded-full overflow-hidden bg-extraClr rounded-lg transition-all duration-800 ease-in-out shadow-md hover:scale-105 hover:text-white hover:shadow-lg active:scale-90 before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-accent before:to-secondary before:transition-all before:duration-1000 before:ease-in-out before:z-[-1] before:rounded-lg hover:before:left-0">
+              <div className="ss:justify-self-end xx:justify-self-center ">
+                <Link to={"/book"}>
+                  <button className="relative ss:ml-6 xx:ml-0 ss:px-6 py-4 xx:px-16   text-secondary text-base font-bold nded-full overflow-hidden bg-extraClr rounded-lg transition-all duration-800 ease-in-out shadow-md hover:scale-105 hover:text-white hover:shadow-lg active:scale-90 before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-accent before:to-secondary before:transition-all before:duration-1000 before:ease-in-out before:z-[-1] before:rounded-lg hover:before:left-0">
                     ALL BOOKS
                   </button>
                 </Link>
               </div>
             </div>
-            <div className="grid gap-6 px-4 sm:px-0 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
-              <div className="group relative rounded-3xl  space-y-6 overflow-hidden">
+            <div className="grid gap-6 ss:px-4 xx:px-0 sm:px-0 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
+              <div className="group relative rounded-3xl xx:w-full ss:space-y-6 overflow-hidden">
                 <img
                   className="mx-auto h-full w-full grayscale object-cover object-top ransition duration-500 group-hover:scale-105 group-hover:grayscale-0"
                   src="https://i.postimg.cc/X7HmPYNM/IMG-20220917-WA0018.webp"
@@ -84,9 +85,9 @@ const MyBook = () => {
                     <h4 className="text-xl font-semibold dark:text-gray-700 text-white">
                       Brown Patience
                     </h4>
-                    <span className="block text-sm text-white">Writer</span>
+                    <span className="block text-sm text-white dark:text-secondary">Writer</span>
                   </div>
-                  <p className="mt-8 text-primary dark:text-gray-600">
+                  <p className="mt-2 text-primary dark:text-gray-600">
                     This is a book about porn addiction. About the darkness that
                     persists even after you've stopped viewing it. All based on
                     true experience......
@@ -107,9 +108,9 @@ const MyBook = () => {
                     <h4 className="text-xl font-semibold dark:text-gray-700 text-white">
                       Brown Patience
                     </h4>
-                    <span className="block text-sm text-white">Writer</span>
+                    <span className="block text-sm text-white dark:text-secondary">Writer</span>
                   </div>
-                  <p className="mt-8 text-primary dark:text-gray-600">
+                  <p className="mt-2 text-primary dark:text-gray-600">
                     Born to a man without warmth, Chimamanda is married off
                     early to a man she dreads just as much as her father. But
                     her walls are in place........
@@ -130,9 +131,9 @@ const MyBook = () => {
                     <h4 className="text-xl font-semibold dark:text-gray-700 text-white">
                       Brown Patience
                     </h4>
-                    <span className="block text-sm text-white">Writer</span>
+                    <span className="block text-sm text-white dark:text-secondary">Writer</span>
                   </div>
-                  <p className="mt-8 text-primary dark:text-gray-600">
+                  <p className="mt-2 text-primary dark:text-gray-600">
                     Fantasy is about the sexual mental struggles we face. Those
                     steamy thoughts that feel like you're engaging in a porn
                     video production.......
@@ -141,15 +142,15 @@ const MyBook = () => {
               </div>
             </div>
           </div>
-          <div className="px-4 mb-6 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+          <div className="px-4 mb-6 py-16 mx-auto  md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
             <div className="text-center">
               <h2
                 style={{
-                  borderBottom: "2px solid #343434",
+                
                   display: "inline-block",
                   paddingBottom: "1rem",
                 }}
-                className=" mb-24 text-center text-2xl  font-bold text-secondary dark:text-white md:text-4xl"
+                className=" ss:mb-24 xx:mb-12 xx:mt-24 text-center ss:text-2xl xx:text-xl border-b-4 border-solid border-b-secondary dark:border-b-primary   font-bold text-secondary dark:text-white md:text-4xl"
               >
                 Books I've Worked On
               </h2>

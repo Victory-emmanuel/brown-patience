@@ -9,7 +9,7 @@ export { default as SubSect } from "./subSect";
 export { default as Testimonial } from "./testimonial";
 
 export { default as Step } from "./step";
-export { default as FAQ } from "./faq";
+export { default as Faq } from "./faq";
 export { default as SubsFaq } from "./subsFaq";
 export { default as Footer } from "./footer";
 export { default as Email } from "./email";
