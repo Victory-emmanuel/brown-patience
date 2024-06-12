@@ -43,7 +43,7 @@ function App() {
           />
           <Route path="/contact" element={<Contact />} />
           <Route path="/community" element={<Community />} />
-          <Route path="/blogContentPg" element={<BlogContentPg />} />
+          <Route path="/blogContentPg/:id" element={<BlogContentPg />} />
         </Routes>
         <Faq />
         <Footer />

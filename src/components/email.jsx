@@ -37,7 +37,7 @@ const Email = () => {
             >
               <div>
                 <label
-                  for="email"
+                  htmlFor="email"
                   className="block mb-2 text-lg font-semibold text-primary"
                 >
                   Your Email
@@ -53,7 +53,7 @@ const Email = () => {
               </div>
               <div className="">
                 <label
-                  for="name"
+                  htmlFor="name"
                   className="block mb-2 text-lg font-semibold text-primary"
                 >
                   Your Name
@@ -69,7 +69,7 @@ const Email = () => {
               </div>
               <div className="sm:col-span-2">
                 <label
-                  for="message"
+                  htmlFor="message"
                   className="block mb-2 text-lg font-semibold text-primary dark:text-primary"
                 >
                   Your Message

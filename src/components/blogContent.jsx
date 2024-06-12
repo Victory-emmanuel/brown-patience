@@ -10,7 +10,7 @@ const BlogContent = () => {
               key={blog.id}
               className="bg-primary rounded-lg overflow-hidden drop-shadow-md "
             >
-              <Link to={"/blogContentPg"}>
+              <Link to={`/blogContentPg/${blog.id}`}>
                 <img
                   className="h-56 w-full object-cover"
                   src={blog.coverImg}
